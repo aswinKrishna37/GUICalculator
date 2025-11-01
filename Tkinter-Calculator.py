@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import * 
 
 root = tk.Tk()
-
 label = Label(root,text="Output")
 label.grid(row=1,column=1,columnspan=4,rowspan=2)
 
@@ -10,23 +9,23 @@ root.rowconfigure(1, minsize=40)
 root.rowconfigure(2, minsize=40)
 
 
-button_1 = Button(root,text="1",padx=20,pady=10)
-button_2 = Button(root,text="2",padx=20,pady=10)
-button_3 = Button(root,text="3",padx=20,pady=10)
-button_4 = Button(root,text="4",padx=20,pady=10)
-button_5 = Button(root,text="5",padx=20,pady=10)
-button_6 = Button(root,text="6",padx=20,pady=10)
-button_7 = Button(root,text="7",padx=20,pady=10)
-button_8 = Button(root,text="8",padx=20,pady=10)
-button_9 = Button(root,text="9",padx=20,pady=10)
-button_0 = Button(root,text="0",padx=20,pady=10)
+button_1 = Button(root,text="1",padx=20,pady=10,bg="black",fg="white")
+button_2 = Button(root,text="2",padx=20,pady=10,bg="black",fg="white")
+button_3 = Button(root,text="3",padx=20,pady=10,bg="black",fg="white")
+button_4 = Button(root,text="4",padx=20,pady=10,bg="black",fg="white")
+button_5 = Button(root,text="5",padx=20,pady=10,bg="black",fg="white")
+button_6 = Button(root,text="6",padx=20,pady=10,bg="black",fg="white")
+button_7 = Button(root,text="7",padx=20,pady=10,bg="black",fg="white")
+button_8 = Button(root,text="8",padx=20,pady=10,bg="black",fg="white")
+button_9 = Button(root,text="9",padx=20,pady=10,bg="black",fg="white")
+button_0 = Button(root,text="0",padx=20,pady=10,bg="black",fg="white")
 
-button_add = Button(root,text="+",padx=20,pady=10)
-button_sub = Button(root,text="-",padx=20,pady=10)
-button_mul = Button(root,text="x",padx=20,pady=10)
-button_div = Button(root,text="/",padx=20,pady=10)
+button_add = Button(root,text="+",padx=20,pady=10,bg="black",fg="white")
+button_sub = Button(root,text="-",padx=20,pady=10,bg="black",fg="white")
+button_mul = Button(root,text="x",padx=20,pady=10,bg="black",fg="white")
+button_div = Button(root,text="/",padx=20,pady=10,bg="black",fg="white")
 
-button_eq = Button(root,text="=",padx=46,pady=10)
+button_eq = Button(root,text="=",padx=46,pady=10,bg="black",fg="white")
 
 
 button_1.grid(row=3,column=1)
