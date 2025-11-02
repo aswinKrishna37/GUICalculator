@@ -6,7 +6,7 @@ root.title("GUICalculator")
 root.config(bg="black")
 
 
-e = tk.Entry(root, width=20, font=('Arial', 18), borderwidth=1, relief='flat')
+e = tk.Entry(root, width=20, font=('Arial', 18), borderwidth=1, relief='flat', fg="white", bg="black")
 e.grid(row=0, column=0, columnspan=4, rowspan=2, padx=10, pady=10, ipady=10, ipadx=10)
 
 
