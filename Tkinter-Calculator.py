@@ -18,53 +18,72 @@ def buttonf_clear():
     e.delete(0,END)
 
 def buttonf_add():
-    global num1
-    num1 = int(e.get())
-    e.delete(0,END)
-    global op
-    op = "+"
+    try:
+        global num1, op
+        num1 = int(e.get())
+        e.delete(0, END)
+        op = "+"
+    except ValueError:
+        e.delete(0, END)
+        e.insert(0, "")
     
 def buttonf_sub():
-    global num1
-    num1 = int(e.get())
-    e.delete(0,END)
-    global op
-    op = "-"
+    try:
+        global num1, op
+        num1 = int(e.get())
+        e.delete(0, END)
+        op = "-"
+    except ValueError:
+        e.delete(0, END)
+        e.insert(0, "")
     
 
 def buttonf_mul():
-    global num1
-    num1 = int(e.get())
-    e.delete(0,END)
-    global op
-    op = "*"
+    try:
+        global num1, op
+        num1 = int(e.get())
+        e.delete(0, END)
+        op = "*"
+    except ValueError:
+        e.delete(0, END)
+        e.insert(0, "")
     
 
 def buttonf_div():
-    global num1
-    num1 = int(e.get())
-    e.delete(0,END)
-    global op
-    op = "/"
+    try:
+        global num1, op
+        num1 = int(e.get())
+        e.delete(0, END)
+        op = "/"
+    except ValueError:
+        e.delete(0, END)
+        e.insert(0, "")
     
     
 
 
 
 def buttonf_eq():
-    global num2
-    num2 = int(e.get())
-    e.delete(0,END)
-    global op
-    match op:
-        case "+":
-            e.insert(0,str(num1+num2))
-        case "-":
-            e.insert(0,str(num1-num2))
-        case "*":
-            e.insert(0,str(num1*num2))
-        case "/":
-            e.insert(0,str(num1/num2))
+    try:
+        global num2
+        num2 = int(e.get())
+        e.delete(0,END)
+        global op
+        match op:
+            case "+":
+                e.insert(0,str(num1+num2))
+            case "-":
+                e.insert(0,str(num1-num2))
+            case "*":
+                e.insert(0,str(num1*num2))
+            case "/":
+                e.insert(0,str(num1/num2))
+    except ZeroDivisionError:
+        e.delete(0, END)
+        e.insert(0, "ZeroDivisionError")
+    except:
+        e.delete(0, END)
+        e.insert(0, "")
             
             
     
